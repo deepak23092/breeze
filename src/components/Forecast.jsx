@@ -91,12 +91,12 @@ const Forecast = () => {
   }
 
   return (
-    <div className='w-2/5 bg-black opacity-80 flex items-center justify-center flex-col'>
+    <div className='md:w-2/5 bg-black opacity-80 flex items-center justify-center flex-col py-3'>
 
       <ReactAnimatedWeather icon={icon} color="white" size={74} animate />
 
       {/* <i className="fa-regular fa-sun text-6xl"></i> */}
-      <h1 className='text-4xl mt-4 font-semibold'>{main}</h1>
+      <h1 className='md:text-4xl text-2xl mt-4 font-semibold'>{main}</h1>
       <div className='w-80 h-[1px] bg-slate-400 mt-2'></div>
 
       <form className='mt-4' onSubmit={handleSubmit}>

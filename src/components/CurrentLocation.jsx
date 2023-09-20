@@ -34,10 +34,10 @@ const CurrentLocation = () => {
     if (temperatureC) {
         return (
             <>
-                <div className={`currentloc w-3/5 h-full relative`} style={backgroundImage}>
-                    <h2 className='absolute left-4 top-2 text-2xl font-semibold'>{city}</h2>
-                    <h3 className='absolute left-4 top-9 text-xl'>{country}</h3>
-                    <p className='absolute right-12 bottom-6 text-5xl'>{temperatureC}&deg;c</p>
+                <div className='currentloc md:w-3/5 h-full relative' style={backgroundImage}>
+                    <h2 className='absolute left-4 top-2 md:text-2xl text-lg font-semibold'>{city}</h2>
+                    <h3 className='absolute left-4 md:top-9 top-8 md:text-xl text-md'>{country}</h3>
+                    <p className='absolute right-12 bottom-6 md:text-5xl text-3xl'>{temperatureC}&deg;c</p>
                 </div>
 
                 <Forecast />
@@ -47,10 +47,10 @@ const CurrentLocation = () => {
     }
     else {
         return (
-            <section className='w-full h-full bg-black flex items-center flex-col bg-opacity-60'>
-                <img src="/images/WeatherIcons.gif" alt="" className='w-72' />
-                <p className='text-lg font-semibold text-white'>Detecting your location</p>
-                <p className='w-96 text-center mt-2'>Your current location will be displayed on the App & used for calculating Real time weather</p>
+            <section className='w-full md:h-full h-80 bg-black flex items-center flex-col bg-opacity-60'>
+                <img src="/images/WeatherIcons.gif" alt="" className='md:w-72 w-40' />
+                <p className='md:text-lg text-md font-semibold text-white'>Detecting your location</p>
+                <p className='md:w-96 w-56 text-center mt-2 md:text-md text-sm'>Your current location will be displayed on the App & used for calculating Real time weather</p>
             </section>
         )
     }
