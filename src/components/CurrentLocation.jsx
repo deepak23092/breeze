@@ -1,6 +1,6 @@
 import { React, useContext } from 'react';
 import weatherContext from "../context/weatherContext"
-import Forecast from './forecast';
+import Forecast from './Forecast';
 
 const CurrentLocation = () => {
 
